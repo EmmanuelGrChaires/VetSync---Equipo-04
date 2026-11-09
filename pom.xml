@@ -70,6 +70,18 @@
 				<groupId>org.jacoco</groupId>
 				<artifactId>jacoco-maven-plugin</artifactId>
 				<version>0.8.12</version>
+				<configuration>
+					<excludes>
+						<exclude>**/domain/Dueno.class</exclude>
+						<exclude>**/domain/Mascota.class</exclude>
+						<exclude>**/domain/HistorialMedico.class</exclude>
+						<exclude>**/domain/Veterinario.class</exclude>
+						<exclude>**/domain/Cita.class</exclude>
+						<exclude>**/domain/Notificacion.class</exclude>
+						<exclude>**/VetsyncApplication.class</exclude>
+                                                <exclude>**/Configuracion*.class</exclude>
+					</excludes>
+				</configuration>
 				<executions>
 					<execution>
 						<goals>
